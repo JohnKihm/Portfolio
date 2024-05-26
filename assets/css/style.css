@@ -64,6 +64,7 @@ article {
 
 article h2 {
     flex: 0 0 15%;
+    text-align: center;
     border-right: 5px solid var(--header-background);
     margin-right: 1%;
 }
@@ -149,12 +150,45 @@ article p {
         font-size: 10px;
     }
 
-    h2 {
-        font-size: 125%;
+    header {
+        flex-direction: column;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    article h2 {
+        flex: 0 0 15%;
+        text-align: center;
+        border: 5px solid var(--header-background);
+        margin: 1%;
+    }
+
+    #profile-picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    #profile-picture img {
+        width: 50%;
     }
     
     .work-links li {
         flex: 2 1 80%;
-    padding: 0 20%;
+        padding: 0 20%;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-links li {
+        margin: 1%;
+    }
+
+    footer h4 {
+        margin: 2%;
     }
 }
